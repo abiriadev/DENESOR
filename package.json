@@ -1,0 +1,52 @@
+{
+    "name": "denesor",
+    "version": "0.1.0",
+    "description": "denesor",
+    "scripts": {
+        "start": "node -r dotenv/config dist/index.js",
+        "dev": "nodemon --exec ts-node src/index.ts",
+        "build": "tsc",
+        "eslint-check": "npx eslint src/index.ts",
+        "eslint-fix": "npx eslint src/index.ts --fix",
+        "prettier-start": "npx prettier --single-quote --tab-width 2 src/index.ts",
+        "prettier-clean": "npx prettier src/index.ts",
+        "prettier-write": "prettierrc --write src/index.ts"
+    },
+    "keywords": [
+        "typescript",
+        "tsc",
+        "javascript",
+        "NodeJS",
+        "starter",
+        "kit"
+    ],
+    "author": "Yassine",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^13.7.1",
+        "@typescript-eslint/eslint-plugin": "^4.22.1",
+        "@typescript-eslint/parser": "^4.22.1",
+        "eslint": "^7.2.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.22.1",
+        "nodemon": "^2.0.2",
+        "prettier": "^1.19.1",
+        "ts-node": "^8.6.2",
+        "ts-node-dev": "^1.0.0-pre.44",
+        "typescript": "^3.7.5"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/abiriadev/DENESOR"
+    },
+    "bugs": {
+        "url": "https://github.com/abiriadev/DENESOR/issues"
+    },
+    "homepage": "https://github.com/abiriadev/DENESOR",
+    "dependencies": {
+        "discord.js": "^12.5.3",
+        "dotenv": "^9.0.2",
+        "msg.ts": "^0.1.4"
+    }
+}
